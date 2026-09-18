@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Choose a personal website template</title>
+    <meta
+      name="description"
+      content="Five ready personal website templates. Pick a look, then publish at YOUR-USERNAME.github.io."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://YOUR-USERNAME.github.io/gallery/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Choose a personal website template" />
+    <meta property="og:description" content="Five ready personal sites. Your live URL is YOUR-USERNAME.github.io." />
+    <meta property="og:url" content="https://YOUR-USERNAME.github.io/gallery/" />
+    <meta property="og:image" content="https://YOUR-USERNAME.github.io/assets/images/og-image.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../assets/css/gallery.css" />
+    <script src="../site-config.js"></script>
+    <script src="../assets/js/apply-site-url.js"></script>
+  </head>
+  <body>
+    <main class="wrap">
+      <section class="hero">
+        <p class="eyebrow">Five ready sites · no install</p>
+        <h1>Choose the site that feels like you.</h1>
+        <p class="lede">
+          Preview a look, then make it your homepage. Your public URL is
+          <code>https://YOUR-USERNAME.github.io</code>.
+        </p>
+      </section>
+
+      <section class="url-panel" aria-labelledby="url-heading">
+        <h2 id="url-heading">Your website URL</h2>
+        <p>
+          Name the GitHub repo <code>YOUR-USERNAME.github.io</code>, then put the
+          same value in <code>site-config.js</code>.
+        </p>
+        <label for="site-url-input">Public URL</label>
+        <input
+          id="site-url-input"
+          data-site-url
+          type="url"
+          spellcheck="false"
+          readonly
+          value="https://YOUR-USERNAME.github.io/"
+        />
+        <p>
+          Share:
+          <a data-site-url-link="text" href="../">https://YOUR-USERNAME.github.io/</a>
+        </p>
+      </section>
+
+      <section class="grid" aria-label="Available templates">
+        <a class="card" href="../templates/editorial/">
+          <div class="preview editorial" aria-hidden="true"><strong>Editorial</strong></div>
+          <div class="copy">
+            <h2>Editorial</h2>
+            <p>Warm magazine layout. Good default for a general portfolio.</p>
+          </div>
+        </a>
+        <a class="card" href="../templates/midnight/">
+          <div class="preview midnight" aria-hidden="true"><strong>Midnight</strong></div>
+          <div class="copy">
+            <h2>Midnight</h2>
+            <p>Dark, technical, and compact. Fits engineering and tool-building.</p>
+          </div>
+        </a>
+        <a class="card" href="../templates/scholar/">
+          <div class="preview scholar" aria-hidden="true"><strong>Scholar</strong></div>
+          <div class="copy">
+            <h2>Scholar</h2>
+            <p>CV-style homepage for research, labs, and talks.</p>
+          </div>
+        </a>
+        <a class="card" href="../templates/studio/">
+          <div class="preview studio" aria-hidden="true"><strong>Studio</strong></div>
+          <div class="copy">
+            <h2>Studio</h2>
+            <p>Large type and color blocks. Fits design, media, and making.</p>
+          </div>
+        </a>
+        <a class="card wide" href="../templates/letter/">
+          <div class="preview letter" aria-hidden="true"><strong>Letter</strong></div>
+          <div class="copy">
+            <h2>Letter</h2>
+            <p>A single-column page that reads like a note.</p>
+          </div>
+        </a>
+      </section>
+
+      <p class="note">
+        To put a look on your homepage, run
+        <code>./use-template.sh midnight</code> (or editorial, scholar, studio,
+        letter) in Cursor’s terminal, then edit the root <code>index.html</code>.
+      </p>
+    </main>
+    <footer class="wrap">
+      <p>Full steps are in <code>WALKTHROUGH.md</code>. <a href="../">Back to your site</a></p>
+    </footer>
+  </body>
+</html>
