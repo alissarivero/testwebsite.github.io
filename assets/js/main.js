@@ -7,6 +7,11 @@
     year.textContent = String(new Date().getFullYear());
   }
 
+  const backgroundVideo = document.querySelector(".page-bg-video");
+  if (backgroundVideo && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    backgroundVideo.pause();
+  }
+
   if (!nav || !toggle) {
     return;
   }
