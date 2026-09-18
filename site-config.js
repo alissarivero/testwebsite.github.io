@@ -5,10 +5,9 @@
 
 window.SITE_CONFIG = {
   // No trailing slash. This is the URL people will visit.
-  // Name your GitHub repo YOUR-USERNAME.github.io so this is accurate.
-  siteUrl: "https://YOUR-USERNAME.github.io",
+  siteUrl: "https://alissarivero.github.io/testwebsite.github.io",
 
   // Which look is live on the homepage:
   // editorial | midnight | scholar | studio | letter
-  template: "editorial"
+  template: "studio"
 };
